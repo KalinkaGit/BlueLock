@@ -49,7 +49,7 @@ static int connect_to_device_by_mac(bluelock_t *bluelock)
 
 static int get_rssi(char *mac)
 {
-    int rssi;
+    int rssi = 0;
 
     char *command = malloc(sizeof(char) * 100);
 

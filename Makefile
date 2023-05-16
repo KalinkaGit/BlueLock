@@ -59,7 +59,6 @@ release: 			$(RELEASE_NAME)
 
 $(RELEASE_NAME): 	CFLAGS += -O3
 $(RELEASE_NAME): 	$(RELEASE_OBJ)
-					@make -C lib/my
 					@mkdir -p $(RELEASE_DIR)
 					@printf "\033[32m[OK]\033[0m Linking project...\n"
 					@$(CC) $(CFLAGS) $(RELEASE_FLAGS) \
@@ -83,7 +82,6 @@ fclean: 			clean
 re: 				fclean all
 
 unit_tests:
-					@make -C lib/my
 					@printf "\033[32m[OK]\033[0m Building unit tests...\n"
 					@$(CC) $(CFLAGS) $(TEST_FLAGS) $(SRC_TESTS) -o unit_tests
 
