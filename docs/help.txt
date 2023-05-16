@@ -1,0 +1,19 @@
+USAGE
+    ./bluelock [OPTIONS]...
+
+DESCRIPTION
+    Lock the screen when a bluetooth device disconnects.
+
+OPTIONS
+    -h, --help
+        Display this help message and exit.
+    -s, --scan
+        Scan all available devices.
+    -d, --device=DEVICE
+        The device to watch for disconnection.
+    -t, --timeout=TIMEOUT
+        The time to wait before locking the screen.
+    -v, --version
+        Display the version number and exit.
+    -D, --distance=DISTANCE
+        The distance to the device to trigger the lock.
