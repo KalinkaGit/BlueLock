@@ -10,18 +10,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-#include <sys/socket.h>
-#include <sys/ioctl.h>
-#include <bluetooth/bluetooth.h>
-#include <bluetooth/hci.h>
-#include <bluetooth/hci_lib.h>
-#include <bluetooth/rfcomm.h>
 #include <unistd.h>
 
 /* LOCAL INCLUDES */
 #include "bluelock.h"
 #include "constants.h"
 #include "utils.h"
+#include "bluetooth/bluetooth.h"
+#include "bluetooth/hci.h"
+#include "bluetooth/hci_lib.h"
+#include "bluetooth/rfcomm.h"
 
 static int connect_to_device_by_mac(bluelock_t *bluelock)
 {
